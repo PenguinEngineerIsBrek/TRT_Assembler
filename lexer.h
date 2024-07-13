@@ -7,8 +7,7 @@ void read(char path[], char keyword[]){
 	size_t len = strlen(path);
 
 	if(!(len >= 4 && path[len-4] == '.' && path[len-3] == 'a' && path[len-2] == 's' && path[len-1] == 'm')){
-		errno = 1;
-		perror("Not an assembly file, no further execution.");
+		printf("Not an assembly file, no further execution.");
 		return;
 	}
 	FILE *f;

@@ -6,6 +6,6 @@
 int main()
 {
     char str[] = "";
-   read("trt_asm.c", str);
+   read("trt.asm", str);
     return 0;
 }
